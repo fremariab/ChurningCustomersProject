@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the HTML page -->
+    <title>Customer Churn Predictor</title>
+
+    <!-- Link to the external style sheet (style.css) in the 'static' folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Container div for styling purposes -->
+    <div class="container">
+
+        <!-- Heading of the page -->
+        <h1>Customer Churn Predictor</h1>
+
+        <!-- Instruction for user input -->
+        <p>Enter 1 for Yes and 0 for No</p>
+        <p>Enter 1 for Male and 0 for Fremale</p>
+
+        <!-- Form for user input -->
+        <form method="post" action="/predict">
+
+            <!-- Loop through selected features to create input fields -->
+            {% for feature in selected_features %}
+            <!-- Label for the input field -->
+            <label for="{{ feature }}">{{ feature }}:</label>
+
+            <!-- Input field for user to enter data, marked as required -->
+            <input type="text" name="{{ feature }}" required>
+
+            <!-- End of the loop -->
+            {% endfor %}
+
+            <!-- Button to submit the form for prediction -->
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+
+</html>

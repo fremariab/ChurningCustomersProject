@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the HTML page -->
+    <title>Customer Churn Prediction Result</title>
+
+    <!-- Link to the external style sheet (style.css) in the 'static' folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <!-- Container div for styling purposes -->
+    <div class="container">
+
+        <!-- Heading of the page -->
+        <h1>Customer Churn Prediction Result</h1>
+
+        <!-- Displaying the prediction class received from Flask app -->
+        <p>This customer has a churn prediction of: {{ prediction_class }}</p>
+
+        <!-- Link to go back to the home page -->
+        <a href="/">Go back</a>
+
+    </div>
+</body>
+
+</html>

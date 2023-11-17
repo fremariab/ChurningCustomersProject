@@ -1,0 +1,77 @@
+/* Reset some default styling and set basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    /* Set the font family */
+    background-color: #f4f4f4;
+    /* Set the background color */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+}
+
+/* Styling for the main container */
+.container {
+    max-width: 600px;
+    /* Set the maximum width of the container */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    padding: 20px;
+    /* Add padding inside the container */
+    background-color: #fff;
+    /* Set the background color of the container */
+    border-radius: 8px;
+    /* Add rounded corners to the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow */
+    margin-top: 50px;
+    /* Add top margin */
+}
+
+/* Styling for the form */
+form {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Arrange child elements in a column */
+}
+
+/* Styling for labels within the form */
+label {
+    margin-bottom: 8px;
+    /* Add bottom margin to labels */
+}
+
+/* Styling for input fields within the form */
+input {
+    padding: 8px;
+    /* Add padding to input fields */
+    margin-bottom: 16px;
+    /* Add bottom margin to input fields */
+}
+
+/* Styling for buttons within the form */
+button {
+    padding: 10px;
+    /* Add padding to buttons */
+    background-color: #4caf50;
+    /* Set the background color of buttons */
+    color: #fff;
+    /* Set the text color of buttons */
+    border: none;
+    /* Remove button border */
+    cursor: pointer;
+    /* Set cursor to pointer on hover */
+}
+
+/* Styling for links */
+a {
+    display: block;
+    /* Make links block-level elements */
+    margin-top: 20px;
+    /* Add top margin to links */
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #4caf50;
+    /* Set the text color of links */
+}
