@@ -59,7 +59,7 @@ Access the application at **http://127.0.0.1:5000/**
 - **Automated Alerts** – Notify businesses when a customer is at risk of churning.
 
 ## Author
-Developed by **Freda-Marie Beecham**
+Developed by **[Your Name]**
 
 ---
 
